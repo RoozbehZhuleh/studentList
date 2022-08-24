@@ -6,6 +6,8 @@ const searchPhraseInput = document.querySelector("#searchPhrase")
 
 
 
+const students = []
+
 class Student {
     constructor() {
 
@@ -15,6 +17,10 @@ class Student {
 
 class RenderUI {
     constructor() {
+
+    }
+
+    render() {
 
     }
 }
@@ -31,5 +37,9 @@ class InitApp {
 }
 
 
-const app = new InitApp()
-app.init()
+
+document.addEventListener('DOMContentLoaded', () => {
+    const app = new InitApp()
+    app.init()
+})
+
